@@ -10,5 +10,5 @@ RUN apt-get update && apt-get -y install libssl1.0 libevent-2.0 inetutils-ping &
 
 COPY --from=0 /app/ping-request /ping-request
 
-EXPOSE 80
+EXPOSE 8080
 CMD /ping-request

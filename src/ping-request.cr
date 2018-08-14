@@ -14,4 +14,5 @@ server = HTTP::Server.new do |context|
 end
 
 puts "Pinging #{target_ip} with command `#{command}`"
-server.listen(80)
+server.bind_tcp "0.0.0.0", 8080
+server.listen

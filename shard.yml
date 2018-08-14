@@ -1,0 +1,13 @@
+name: ping-request
+version: 0.1.0
+
+authors:
+  - Matias Garcia Isaia <mgarcia@manas.tech>
+
+targets:
+  ping-request:
+    main: src/ping-request.cr
+
+crystal: 0.26.0
+
+license: MIT

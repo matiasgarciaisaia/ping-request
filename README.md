@@ -4,11 +4,11 @@ Expose an endpoint to ping a given host & tell whether it's up or not
 
 ## Usage
 
-TODO: Write usage instructions here
+Easily run using docker: `docker run -p 8080:8080 -e TARGET_IP=127.0.0.1 matiasgarciaisaia/ping-request`
 
-## Development
+You can alternatively run it locally, but you must ensure you have a compatible `ping` command that accepts `-w` for timeouts: `TARGET_IP=127.0.0.1 crystal run src/ping-request.cr`.
 
-TODO: Write development instructions here
+Or build & run: `crystal build --release src/ping-request.cr && TARGET_IP=127.0.0.1 ./ping-request`
 
 ## Contributing
 
